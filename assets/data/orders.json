@@ -1,0 +1,50 @@
+[
+  { "page": "publikasi", "name": "Rizky P.",  "package": "Publikasi Jurnal Nasional (Sinta 3)",                  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "publikasi", "name": "Anita S.",  "package": "Publikasi Jurnal Internasional (Scopus Q3)",           "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "publikasi", "name": "Budi M.",   "package": "Publikasi Jurnal Non Sinta (ISSN)",                    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "publikasi", "name": "Sari L.",   "package": "Publikasi Jurnal Nasional (Sinta 4)",                  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "publikasi", "name": "Fauzan T.", "package": "Publikasi Jurnal Internasional (Scopus Q4)",           "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "publikasi", "name": "Maya R.",   "package": "Publikasi Jurnal DOAJ",                                "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+
+  { "page": "penerbit", "name": "Galang R.", "package": "Penerbitan Buku — Paket Raja",    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "penerbit", "name": "Nadia K.",  "package": "Penerbitan Buku — Paket Menteri", "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "penerbit", "name": "Arif H.",   "package": "Penerbitan Buku — Paket Rakyat",  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "penerbit", "name": "Dina A.",   "package": "Penerbitan Buku — Paket Raja",    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "penerbit", "name": "Laila M.",  "package": "Penerbitan Buku — Paket Menteri", "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "penerbit", "name": "Yoga S.",   "package": "Penerbitan Buku — Paket Rakyat",  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+
+  { "page": "kursus", "name": "Rizal H.",  "package": "Digital & Media — Digital Marketing",            "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "kursus", "name": "Salsa D.",  "package": "Digital & Media — Social Media Marketing",      "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "kursus", "name": "Irfan K.",  "package": "Data & Teknologi — Data Analyst",               "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "kursus", "name": "Winda A.",  "package": "Data & Teknologi — Staff Layanan IT",           "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "kursus", "name": "Sinta K.",  "package": "SDM & Administrasi — Staff Administrasi SDM",   "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "kursus", "name": "Davin R.",  "package": "Pemasaran & Penjualan — Tenaga Pemasar Operasional", "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+
+  { "page": "ojs", "name": "Rafli Z.", "package": "Paket OJS Raja",    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "ojs", "name": "Anya B.",  "package": "Paket OJS Menteri", "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "ojs", "name": "Vino L.",  "package": "Paket OJS Rakyat",  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "ojs", "name": "Ega S.",   "package": "Paket OJS Menteri", "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "ojs", "name": "Karin T.", "package": "Paket OJS Raja",    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "ojs", "name": "Nando P.", "package": "Paket OJS Rakyat",  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+
+  { "page": "vo", "name": "Rio A.",   "package": "Virtual Office — Paket Ekonomis",  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "vo", "name": "Dewi N.",  "package": "Virtual Office — Paket Bisnis",     "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "vo", "name": "Aurel P.", "package": "Virtual Office — Paket Eksekutif",  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "vo", "name": "Reza I.",  "package": "Virtual Office — Paket Bisnis",     "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "vo", "name": "Laras M.", "package": "Virtual Office — Paket Ekonomis",   "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "vo", "name": "Fajar D.", "package": "Virtual Office — Paket Eksekutif",  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+
+  { "page": "legal", "name": "Damar S.",  "package": "Pendirian PT",                                  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "legal", "name": "Gita R.",   "package": "Pendirian Koperasi",                            "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "legal", "name": "Yusuf A.",  "package": "Pendirian CV",                                  "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "legal", "name": "Novi D.",   "package": "Pendirian Firma / Persekutuan Perdata",         "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "legal", "name": "Seno K.",   "package": "Pendirian Yayasan",                             "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "legal", "name": "Hani Q.",   "package": "PT Perorangan — Paket 1",                       "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+
+  { "page": "pelatihan", "name": "Akbar R.", "package": "LPK Jepang — Program Magang Jepang",                         "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "pelatihan", "name": "Kenji A.", "package": "LPK Jepang — Kelas Bahasa Jepang JLPT N5",                   "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "pelatihan", "name": "Silvi M.", "package": "LPK Jepang — Kelas Bahasa Jepang JLPT N4",                   "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "pelatihan", "name": "Rama D.",  "package": "LPK Jepang — Penempatan SSW (Tokutei Ginou) Manufaktur",     "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "pelatihan", "name": "Miyu T.",  "package": "LPK Jepang — Penempatan SSW (Tokutei Ginou) Caregiver",      "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" },
+  { "page": "pelatihan", "name": "Aulia P.", "package": "LPK Jepang — Kelas Etika Kerja & Budaya Jepang",              "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756096658/icpro_b3jrq4.webp" }
+]

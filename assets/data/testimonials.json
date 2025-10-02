@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Silmi Azizah",
+    "role": "Penulis Buku",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342074/2_ydihuv.webp",
+    "rating": 5,
+    "quote": "Proses penerbitan buku di ACI sangat cepat dan profesional. Timnya komunikatif dan hasil cetaknya luar biasa. Sangat direkomendasikan!"
+  },
+  {
+    "name": "Siti Nurhaliza",
+    "role": "Dosen",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342074/1_w7odog.webp",
+    "rating": 5,
+    "quote": "Pendampingan publikasi jurnal rapi dan jelas. OJS kampus kami jadi jauh lebih tertata."
+  },
+  {
+    "name": "Budi Santoso",
+    "role": "Kepala Lembaga",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342073/3_b26wkz.webp",
+    "rating": 5,
+    "quote": "Tim ACI responsif dan implementasi website institusi berjalan mulus dari awal hingga go-live."
+  },
+  {
+    "name": "Nadia Putri",
+    "role": "Editor",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342073/4_uutule.webp",
+    "rating": 4,
+    "quote": "Desain & layout buku rapi, koordinasi cepat, dan tepat waktu."
+  },
+  {
+    "name": "Rizky Ramadhan",
+    "role": "Admin Jurnal",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342073/5_al1ifj.webp",
+    "rating": 5,
+    "quote": "Migrasi OJS dan indexing dibantu sampai tuntas. Workflow editorial jadi efisien."
+  },
+  {
+    "name": "Dewi Anggraini",
+    "role": "UMKM Owner",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342073/6_nvtrgw.webp",
+    "rating": 5,
+    "quote": "Layanan penerbitan praktis. Buku produk kami terlihat premium untuk bahan promosi."
+  },
+  {
+    "name": "Fauzan   ",
+    "role": "Mahasiswa S2",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342074/7_xpm0nk.webp",
+    "rating": 5,
+    "quote": "Proofreading dan template jurnalnya bantu naskah saya terbit tanpa revisi besar."
+  },
+  {
+    "name": "Laila Maharani",
+    "role": "Sekretaris Prodi",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342073/8_czch98.webp",
+    "rating": 5,
+    "quote": "Pelatihan pengelolaan OJS untuk tim kami sangat aplikatif dan mudah diikuti."
+  },
+  {
+    "name": "Yoga Saputra",
+    "role": "Manajer Legal",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758342074/9_mmtpys.webp",
+    "rating": 4,
+    "quote": "Paket legalitas dan dokumen pendukung lengkap, prosesnya jelas dan cepat."
+  }
+]

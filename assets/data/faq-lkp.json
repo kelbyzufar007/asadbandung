@@ -1,0 +1,28 @@
+
+  [
+    {
+      "q": "Apa itu pelatihan Digital & Media?",
+      "a": "Fokus pada keterampilan kreatif dan konten digital seperti Digital Marketing, Social Media Marketing, Content Creation, Desain Grafis/Multimedia, dan Video Editing. Cocok untuk pemula hingga praktisi yang ingin meningkatkan portofolio.",
+      "open": true
+    },
+    {
+      "q": "Apa yang dipelajari di Pemasaran & Penjualan?",
+      "a": "Materi mencakup dasar–lanjutan penjualan (operasional hingga manajerial), perencanaan strategi pemasaran, CRM, dan optimasi kanal digital. Ditujukan untuk sales, marketer, dan pelaku bisnis."
+    },
+    {
+      "q": "Apa cakupan pelatihan Data & Teknologi?",
+      "a": "Kurikulum meliputi Data Analysis, Office/Excel Advance, dasar pemrograman dan IT support/service desk. Menekankan praktik alat kerja populer dan studi kasus nyata."
+    },
+    {
+      "q": "Apa manfaat pelatihan Kewirausahaan & UMKM?",
+      "a": "Membantu pemilik usaha/UMKM membangun branding, operasional, pemasaran digital, pencatatan sederhana, dan strategi pengembangan bisnis agar lebih berkelanjutan."
+    },
+    {
+      "q": "Apa isi pelatihan SDM & Administrasi?",
+      "a": "Mencakup administrasi personalia, payroll dasar, penyusunan KPI, komunikasi kerja, hingga peran Supervisor/Manager SDM. Banyak simulasi dokumen dan kebijakan HR."
+    },
+    {
+      "q": "Apa itu pelatihan Layanan Publik & Umum?",
+      "a": "Berfokus pada Pelayanan Prima (service excellence), komunikasi layanan, dan dasar Pengadaan Barang/Jasa. Cocok untuk instansi pemerintah, BUMN, maupun perusahaan jasa."
+    }
+  ]

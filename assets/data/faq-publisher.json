@@ -1,0 +1,32 @@
+[
+  {
+    "q": "Apakah layanan publikasi jurnal di ACI berbayar?",
+    "a": "Ya. Layanan pendampingan publikasi jurnal bersifat berbayar. Konsultasi awal gratis. Biaya menyesuaikan level indeks (Sinta/DOAJ/Scopus), kecepatan LoA, serta paket layanan yang dipilih. Rincian biaya akan kami kirimkan setelah asesmen naskah.",
+    "open": false
+  },
+  {
+    "q": "Bagaimana cara mempublikasikan naskah di ACI Publisher?",
+    "a": "Anda cukup mengirimkan naskah. Tim kami mengurus editing, templating OJS, pemeriksaan Turnitin, submission dan komunikasi dengan editor jurnal, pendampingan revisi, hingga LoA/publish. Selama proses Anda mendapatkan update rutin dari tim editor.",
+    "open": true
+  },
+  {
+    "q": "Berapa lama estimasi LoA dan artikel terbit?",
+    "a": "Untuk paket LoA cepat, estimasi 3–5 hari kerja. Waktu publish tergantung kebijakan jurnal, umumnya 2–8 minggu. Timeline dan target disepakati di MoU.",
+    "open": false
+  },
+  {
+    "q": "Apakah artikel mendapatkan DOI, indexing, dan bukti terbit?",
+    "a": "Artikel yang terbit di jurnal mitra mendapatkan DOI dari jurnal dan tercatat di OJS/portal jurnal. Kami mengirim tautan artikel, file final (galley/PDF), dan bukti administrasi (APC/invoice) bila ada.",
+    "open": false
+  },
+  {
+    "q": "Apakah ada jaminan dan garansi?",
+    "a": "Ada. Jika ketentuan dalam MoU tidak terpenuhi (mis. LoA/publish tidak sesuai paket), tersedia opsi relokasi jurnal atau refund sesuai klausul. Kami mengutamakan transparansi dan hasil.",
+    "open": false
+  },
+  {
+    "q": "Apakah menerima naskah Bahasa Indonesia dan Inggris?",
+    "a": "Ya. Kami menyediakan layanan translate, proofreading, dan penyesuaian gaya selingkung (template, sitasi, referensi) agar naskah sesuai standar jurnal tujuan.",
+    "open": false
+  }
+]

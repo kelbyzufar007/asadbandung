@@ -1,0 +1,32 @@
+[
+  {
+    "q": "Apa itu pelatihan ke Jepang?",
+    "a": "Pelatihan ini membantu persiapan untuk bekerja, magang, atau studi di Jepang, dengan fokus pada kursus bahasa Jepang (N3-N1), budaya Jepang, etika kerja, dan keterampilan industri yang dibutuhkan di Jepang.",
+    "open": true
+  },
+  {
+    "q": "Siapa yang bisa mengikuti pelatihan ini?",
+    "a": "Pelatihan ini terbuka untuk siapa saja yang berminat untuk bekerja, magang, atau belajar di Jepang, dengan kualifikasi mulai dari tingkat dasar hingga profesional.",
+    "open": false
+  },
+  {
+    "q": "Apa saja yang dipelajari dalam pelatihan ini?",
+    "a": "Peserta akan mempelajari kursus bahasa Jepang (N3-N1), keterampilan kerja dan etika Jepang, serta persiapan untuk mencari pekerjaan atau magang di Jepang. Materi juga mencakup kebiasaan sehari-hari di Jepang dan persiapan visa.",
+    "open": false
+  },
+  {
+    "q": "Berapa lama durasi pelatihan?",
+    "a": "Durasi pelatihan dapat berkisar antara beberapa minggu hingga beberapa bulan, tergantung pada jenis kursus bahasa yang dipilih dan tingkat kemampuan peserta.",
+    "open": false
+  },
+  {
+    "q": "Apakah ada sertifikat setelah pelatihan?",
+    "a": "Ya, peserta akan mendapatkan sertifikat setelah menyelesaikan kursus bahasa dan pelatihan terkait yang menunjukkan kemampuan bahasa Jepang dan keterampilan kerja mereka.",
+    "open": false
+  },
+  {
+    "q": "Bagaimana cara mendaftar untuk pelatihan ini?",
+    "a": "Pendaftaran dapat dilakukan langsung melalui website atau menghubungi kami via WhatsApp untuk informasi lebih lanjut mengenai proses pendaftaran dan jadwal pelatihan.",
+    "open": false
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Rizky Aditya",
+    "role": "Peserta Pelatihan Digital Marketing",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758508889/10_dvrdcm.webp",
+    "rating": 5,
+    "quote": "Pelatihan Digital Marketing dari ACI sangat membantu saya memahami strategi online dan praktik langsung. Sangat direkomendasikan!"
+  },
+  {
+    "name": "Siti Aisyah",
+    "role": "Peserta Pelatihan Social Media Marketing",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758508890/11_cl4ped.webp",
+    "rating": 5,
+    "quote": "Instruktur sangat komunikatif dan materinya relevan. Setelah pelatihan, saya bisa langsung menerapkan strategi konten di media sosial."
+  },
+  {
+    "name": "Budi Santoso",
+    "role": "Peserta Pelatihan Data Analyst",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758508890/12_infmzm.webp",
+    "rating": 5,
+    "quote": "Pelatihan Data & Teknologi dari ACI memberi pemahaman analisis data yang mendalam. Tools yang diajarkan langsung bisa saya pakai di pekerjaan."
+  },
+  {
+    "name": "Nadia Putri",
+    "role": "Peserta Pelatihan SDM & Administrasi",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758508890/13_lajmdn.webp",
+    "rating": 4,
+    "quote": "Materinya lengkap dan aplikatif untuk pekerjaan di HR. Fasilitator membantu menjelaskan kasus nyata yang mudah dipahami."
+  },
+  {
+    "name": "Ahmad Hidayat",
+    "role": "Peserta Pelatihan Pemasaran & Penjualan",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758508890/14_j8jjez.webp",
+    "rating": 5,
+    "quote": "Pelatihan ini membuka wawasan baru tentang strategi penjualan dan pemasaran. Sangat berguna untuk meningkatkan performa tim."
+  },
+  {
+    "name": "Sari Lestari",
+    "role": "Peserta Pelatihan Kewirausahaan & UMKM",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758508889/15_duxp62.webp",
+    "rating": 5,
+    "quote": "Sangat inspiratif! Pelatihan UMKM dari ACI membantu saya memahami pengelolaan usaha kecil dengan strategi yang praktis."
+  }
+]

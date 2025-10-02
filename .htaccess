@@ -1,0 +1,126 @@
+# =========================
+# BASE
+# =========================
+Options -Indexes
+AddDefaultCharset utf-8
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Jika proyek di subfolder, aktifkan dan sesuaikan:
+  # RewriteBase /namafolder/
+
+  # =========================
+  # Canonical redirects (HARUS di atas -f/-d)
+  # =========================
+
+  # /index.php  -> /
+  RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+  RewriteRule ^index\.php$ / [R=301,L]
+
+  # /publisher.php -> /publikasi
+  RewriteCond %{THE_REQUEST} \s/+publisher\.php[\s?] [NC]
+  RewriteRule ^publisher\.php$ /publikasi [R=301,L]
+
+  # /book.php -> /penerbit
+  RewriteCond %{THE_REQUEST} \s/+book\.php[\s?] [NC]
+  RewriteRule ^book\.php$ /penerbit [R=301,L]
+
+  # /lpk.php -> /pelatihan
+  RewriteCond %{THE_REQUEST} \s/+lpk\.php[\s?] [NC]
+  RewriteRule ^lpk\.php$ /pelatihan [R=301,L]
+
+    # /ojs.php -> /ojs
+  RewriteCond %{THE_REQUEST} \s/+ojs\.php[\s?] [NC]
+  RewriteRule ^ojs\.php$ /ojs [R=301,L]
+
+      # /lkp.php -> /kursus
+  RewriteCond %{THE_REQUEST} \s/+lkp\.php[\s?] [NC]
+  RewriteRule ^lkp\.php$ /kursus [R=301,L]
+
+        # /ov.php -> /virtualoffice
+  RewriteCond %{THE_REQUEST} \s/+ov\.php[\s?] [NC]
+  RewriteRule ^ov\.php$ /virtualoffice [R=301,L]
+
+          # /legal.php -> /legalitas
+  RewriteCond %{THE_REQUEST} \s/+legal\.php[\s?] [NC]
+  RewriteRule ^legal\.php$ /legalitas [R=301,L]
+
+
+  # =========================
+  # Lewatkan request ke file/folder yang memang ada
+  # =========================
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Halaman utama (root) -> index.php (internal)
+  RewriteRule ^$ index.php [L,QSA]
+
+  # =========================
+  # Pretty URLs
+  # =========================
+  RewriteRule ^publikasi/?$  publisher.php [L,QSA]
+  RewriteRule ^penerbit/?$   book.php       [L,QSA]
+  RewriteRule ^pelatihan/?$   lpk.php       [L,QSA]
+  RewriteRule ^ojs/?$   ojs.php       [L,QSA]
+  RewriteRule ^kursus/?$   lkp.php       [L,QSA]
+  RewriteRule ^virtualoffice/?$   ov.php       [L,QSA]
+  RewriteRule ^legalitas/?$   legal.php       [L,QSA]
+
+
+</IfModule>
+
+# =========================
+# Kompresi
+# =========================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css
+  AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE application/font-woff application/font-woff2
+</IfModule>
+
+# =========================
+# Cache
+# =========================
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/svg+xml  "access plus 1 year"
+  ExpiresByType image/webp     "access plus 1 year"
+  ExpiresByType image/avif     "access plus 1 year"
+  ExpiresByType image/png      "access plus 1 year"
+  ExpiresByType image/jpg      "access plus 1 year"
+  ExpiresByType image/jpeg     "access plus 1 year"
+  ExpiresByType image/gif      "access plus 1 year"
+  ExpiresByType image/x-icon   "access plus 1 year"
+  ExpiresByType font/ttf       "access plus 1 year"
+  ExpiresByType font/otf       "access plus 1 year"
+  ExpiresByType font/woff      "access plus 1 year"
+  ExpiresByType font/woff2     "access plus 1 year"
+  ExpiresByType application/font-woff  "access plus 1 year"
+  ExpiresByType text/css                       "access plus 7 days"
+  ExpiresByType application/javascript         "access plus 7 days"
+  ExpiresByType text/javascript                "access plus 7 days"
+  ExpiresByType application/json               "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css)$">
+    Header set Cache-Control "public, max-age=604800, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(png|jpe?g|gif|webp|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(woff2?|ttf|otf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+  <FilesMatch "\.json$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>

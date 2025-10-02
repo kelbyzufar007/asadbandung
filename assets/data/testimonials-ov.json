@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Dimas Pratama",
+    "role": "Owner Clothing Brand",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758512150/26_qbifyv.webp",
+    "rating": 5,
+    "text": "Sewa virtual office di asad corp bikin brand saya kelihatan jauh lebih profesional. Alamatnya strategis di pusat kota, jadi gampang ketemu mitra."
+  },
+  {
+    "name": "Lisa Anggraini",
+    "role": "Freelancer Graphic Designer",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758512149/29_boebb0.webp",
+    "rating": 5,
+    "text": "Enak banget, semua surat masuk selalu aman. Staffnya juga ramah."
+  },
+  {
+    "name": "Muhammad Rizky",
+    "role": "Startup Founder",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758512149/28_b1zyub.webp",
+    "rating": 5,
+    "text": "Meeting room nyaman banget, presentasi ke investor jadi lebih percaya diri. Fasilitas proyektor dan internet kenceng bikin kerjaan lebih smooth."
+  },
+  {
+    "name": "Sarah Amalia",
+    "role": "Konsultan Pajak",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758512149/27_wj4awg.webp",
+    "rating": 5,
+    "text": "Layanan surat menyuratnya rapi, semua dokumen bisnis saya aman. Hemat waktu banget."
+  },
+  {
+    "name": "Fadli Akbar",
+    "role": "Pengusaha Kuliner",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758512150/24_hetivd.webp",
+    "rating": 5,
+    "text": "Lokasi kantor strategis banget. Klien gampang nemuin alamat bisnis saya."
+  },
+  {
+    "name": "Melati Puspita",
+    "role": "Mahasiswi & Online Shop Owner",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758512150/25_vatfb7.webp",
+    "rating": 5,
+    "text": "Buat anak muda yang mulai usaha, ini solusi terbaik. Murah, fleksibel, tapi tetap profesional."
+  }
+]

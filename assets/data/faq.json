@@ -1,0 +1,32 @@
+[
+  {
+    "q": "Apakah ACI menyediakan layanan konsultasi gratis?",
+    "a": "Ya. Kami menyediakan sesi konsultasi awal gratis untuk memetakan kebutuhan Anda dan merekomendasikan layanan yang paling tepat.",
+    "open": false
+  },
+  {
+    "q": "Bagaimana cara mempublikasikan buku di ACI?",
+    "a": "Anda cukup mengirimkan naskah. Tim kami mengurus editing, desain, tata letak, ISBN, cetak, hingga distribusi. Selama proses, Anda akan mendapat update rutin dari editor kami.",
+    "open": true
+  },
+  {
+    "q": "Apakah semua pelatihan ACI mendapatkan sertifikat?",
+    "a": "Semua peserta yang memenuhi ketentuan kehadiran dan tugas akan menerima e-sertifikat. Beberapa program menyediakan sertifikat kompetensi khusus.",
+    "open": false
+  },
+  {
+    "q": "Bagaimana cara mendaftar pelatihan ACI?",
+    "a": "Pilih program pada halaman Kegiatan, klik 'Daftar Sekarang', isi formulir, lakukan pembayaran (jika berbayar), lalu konfirmasi ke admin. E-ticket akan dikirim via email/WhatsApp.",
+    "open": false
+  },
+  {
+    "q": "Berapa lama proses pembuatan website atau OJS?",
+    "a": "Rata-rata 2–4 minggu, tergantung kompleksitas fitur dan kesiapan konten. Proyek khusus bisa lebih lama sesuai scope.",
+    "open": false
+  },
+  {
+    "q": "Apakah ACI melayani klien di luar kota atau luar negeri?",
+    "a": "Tentu. Kami melayani secara remote maupun hybrid. Meeting dapat dilakukan via Zoom/Google Meet, dan seluruh deliverable dapat dikirimkan secara digital.",
+    "open": false
+  }
+]

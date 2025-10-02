@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Educenter",
+    "role": "Editor in Chief – Universitas Educenter",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094513/avatar-testi_vvdmos.webp",
+    "rating": 5,
+    "quote": "Tim ACI menyiapkan OJS 3.4 lengkap—domain, hosting, DOI, dan template sesuai pedoman SINTA. Migrasi artikel rapi dan jurnal siap terbit."
+  },
+  {
+    "name": "CESSIE",
+    "role": "Pengelola Jurnal – Fakultas Hukum",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094513/avatar-testi_vvdmos.webp",
+    "rating": 5,
+    "quote": "Kustomisasi tema sesuai brand kampus, alur submission lebih sederhana, dan pelatihan editor/reviewer dari ACI sangat membantu."
+  },
+  {
+    "name": "Co-Creation",
+    "role": "Admin Jurnal – Prodi Manajemen",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094513/avatar-testi_vvdmos.webp",
+    "rating": 4,
+    "quote": "Implementasi OJS cepat, dokumentasi lengkap, dan support responsif saat setting email notifikasi serta integrasi Crossref."
+  },
+  {
+    "name": "AgriTech",
+    "role": "Tim IT – Fakultas Pertanian",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094513/avatar-testi_vvdmos.webp",
+    "rating": 5,
+    "quote": "Migrasi dari OJS 2 ke 3.4 tanpa kehilangan metadata. Menu, plugin statistik, dan backup otomatis disiapkan dengan baik."
+  },
+  {
+    "name": "Humaniora Nusantara",
+    "role": "Sekretaris Redaksi – LPPM",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094513/avatar-testi_vvdmos.webp",
+    "rating": 5,
+    "quote": "Penataan kolom, citation style, serta penomoran DOI rapi. Tampilan jurnal lebih profesional dan siap akreditasi SINTA."
+  },
+  {
+    "name": "Jurnal Informatika ACI",
+    "role": "Managing Editor – Fakultas Teknik",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094513/avatar-testi_vvdmos.webp",
+    "rating": 5,
+    "quote": "Setup cepat, role pengguna jelas, dan panduan operasional mudah diikuti. Situs stabil dengan SSL dan performa optimal."
+  }
+]

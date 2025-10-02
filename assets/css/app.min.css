@@ -1,0 +1,172 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pakai Inter untuk seluruh teks */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+/* Contoh: tetap pakai Madani untuk judul (kalau kamu sudah load Madani) */
+.font-madani,
+h1,
+h2,
+.heading {
+  font-family: "Madani", ui-sans-serif, system-ui;
+  font-weight: 700;
+}
+
+header.fixed {
+  backdrop-filter: saturate(1.2) blur(6px);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+
+/* sembunyikan scrollbar di track */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Popup Modal Styles */
+.popup-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.popup-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+.consultation-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.consultation-btn:hover {
+  background-color: #e67e22;
+}
+
+.amber-glow {
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.55),
+    /* garis luar tambahan (kuning) */ 0 0 22px rgba(251, 191, 36, 0.45);
+  /* glow kuning */
+}
+
+/* ukuran seragam */
+.li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.li .i {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+}
+
+/* warna via currentColor */
+.li .i {
+  color: inherit;
+} /* biar ikut class di bawah */
+.i-close {
+  color: #ef4444;
+} /* merah (red-500) */
+.i-check {
+  color: #f59e0b;
+} /* kuning (amber-500) */
+
+.lacquer-regular {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    :root { --marquee-gap: 1.0rem; }
+
+    /* Wrapper memberi fade di sisi kiri/kanan (opsional, bikin lebih rapi) */
+    .marquee {
+      -webkit-mask-image: linear-gradient(to right, transparent 0, black 5%, black 95%, transparent 100%);
+              mask-image: linear-gradient(to right, transparent 0, black 5%, black 95%, transparent 100%);
+    }
+
+    /* Track bergerak kontinu (duplikasi konten digandakan via JS) */
+    .marquee__track {
+      display: flex;
+      gap: var(--marquee-gap);
+      will-change: transform;
+      animation: scroll var(--marquee-duration, 40s) linear infinite;
+    }
+
+    /* Gerakkan setengah lebar track (karena kontennya diduplikasi) */
+    @keyframes scroll {
+      from { transform: translate3d(0, 0, 0); }
+      to   { transform: translate3d(-50%, 0, 0); }
+    }
+
+    /* Arah kebalikan untuk baris 2 */
+    .marquee--reverse .marquee__track { animation-direction: reverse; }
+
+    /* Hormati preferensi pengurangan motion */
+    @media (prefers-reduced-motion: reduce) {
+      .marquee__track { animation-play-state: paused; }
+    }

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Andi Saputra",
+    "role": "Owner Coffee Shop",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758513649/30_v36owv.webp",
+    "rating": 5,
+    "text": "Pendirian PT beres dalam hitungan hari. SK Kemenkumham, NIB OSS, sampai NPWP diurus semua. Progress-nya transparan lewat WhatsApp—mantap!"
+  },
+  {
+    "name": "Rina Maharani",
+    "role": "Pelaku UMKM Fashion",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758513649/31_rsyx1j.webp",
+    "rating": 5,
+    "text": "Daftar merek dagang dibantu dari cek kelas sampai submit. Dokumen rapi, penjelasannya gampang dipahami. Sekarang brand saya lebih aman."
+  },
+  {
+    "name": "Bayu Prakoso",
+    "role": "CTO Startup SaaS",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758513649/32_fd5zox.webp",
+    "rating": 5,
+    "text": "Urus PKP & e-Faktur dibimbing step-by-step, gak perlu bolak-balik kantor pajak. Timnya responsif dan tahu regulasi terbaru."
+  },
+  {
+    "name": "Siti Rahma",
+    "role": "Konsultan Keuangan",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758513648/33_vhbhqj.webp",
+    "rating": 5,
+    "text": "Sertifikat Standar OSS RBA klien saya terbit tanpa drama. Checklist-nya jelas, semua syarat disiapkan. Recommended buat yang butuh legalitas cepat."
+  },
+  {
+    "name": "Hendra Gunawan",
+    "role": "Importir Bahan Baku",
+    "avatar": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1758513648/34_trgh5t.webp",
+    "rating": 5,
+    "text": "Pengurusan API-U dan akses kepabeanan selesai sesuai jadwal. Dampingan teknis di portal INSW & OSS bikin proses jadi mulus."
+  }
+]

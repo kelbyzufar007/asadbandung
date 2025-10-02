@@ -1,0 +1,27 @@
+[
+  {
+    "q": "Apa itu layanan pembuatan OJS?",
+    "a": "Layanan pembuatan OJS adalah pendampingan dan setup platform Open Journal Systems untuk institusi agar dapat mengelola jurnal ilmiah secara profesional sesuai standar akreditasi SINTA.",
+    "open": true
+  },
+  {
+    "q": "Siapa yang cocok menggunakan layanan ini?",
+    "a": "Cocok untuk universitas, lembaga penelitian, penerbit, maupun organisasi yang ingin memiliki jurnal ilmiah online dengan manajemen terstruktur. Tidak cocok untuk individu yang hanya ingin publikasi personal tanpa domain resmi."
+  },
+  {
+    "q": "Apa saja yang termasuk dalam layanan OJS?",
+    "a": "Setup platform OJS, penyesuaian template, instalasi plugin, training editor jurnal, dukungan submission, review, dan publikasi artikel sesuai standar akademik."
+  },
+  {
+    "q": "Apakah OJS bisa digunakan untuk jurnal terakreditasi?",
+    "a": "Ya. Layanan ini memastikan konfigurasi platform sesuai persyaratan akreditasi SINTA dan standar publikasi internasional jika diperlukan."
+  },
+  {
+    "q": "Berapa lama proses pembuatan OJS?",
+    "a": "Proses setup biasanya 3–7 hari kerja, tergantung jumlah jurnal, penyesuaian template, dan kelengkapan konten awal. Training editor dapat dilakukan bersamaan atau setelah setup selesai."
+  },
+  {
+    "q": "Bagaimana sistem harga dan paket layanan?",
+    "a": "Tersedia paket standar dan premium sesuai jumlah jurnal dan fitur tambahan (mis. DOI, integrasi Crossref, multi-language). Harga fleksibel berdasarkan kebutuhan institusi."
+  }
+]

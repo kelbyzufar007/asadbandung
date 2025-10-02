@@ -1,0 +1,42 @@
+[
+  {
+    "id": "publikasi-jurnal",
+    "title": "Publikasi Jurnal",
+    "desc": "Pendampingan submit, layout, hingga strategi indeksasi untuk jurnal ilmiah.",
+    "icon": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094349/rc_a7zfda.webp",
+    "url": "/publikasi",
+    "cta": "Selengkapnya"
+  },
+  {
+    "id": "penerbitan-buku",
+    "title": "Penerbitan Buku",
+    "desc": "Kurasi naskah, ISBN, desain sampul & tata letak, percetakan, hingga distribusi.",
+    "icon": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094308/bo_vcvyxt.webp",
+    "url": "/penerbit",
+    "cta": "Selengkapnya"
+  },
+  {
+    "id": "ojs-website",
+    "title": "OJS & Website",
+    "desc": "Instalasi, kustomisasi, dan pelatihan OJS / website institusi yang profesional.",
+    "icon": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094312/ds_sevmwd.webp",
+    "url": "#",
+    "cta": "Selengkapnya"
+  },
+  {
+    "id": "pelatihan",
+    "title": "Pelatihan & Workshop",
+    "desc": "Program peningkatan kapasitas untuk penulis, editor, dosen, dan praktisi.",
+    "icon": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094280/ba_me9sdn.webp",
+    "url": "#",
+    "cta": "Lihat Jadwal"
+  },
+  {
+    "id": "branding",
+    "title": "Branding & Desain",
+    "desc": "Identitas visual, materi promosi, dan desain publikasi siap pakai.",
+    "icon": "https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094340/lk_z5zafw.webp",
+    "url": "#",
+    "cta": "Selengkapnya"
+  }
+]

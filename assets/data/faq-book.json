@@ -1,0 +1,43 @@
+[
+  {
+    "q": "Apakah layanan penerbitan buku di ACI berbayar?",
+    "a": "Ya. Layanan penerbitan buku bersifat berbayar, namun konsultasi awal gratis. Biaya bergantung paket (Raja/Menteri/Rakyat), ukuran buku, jumlah halaman, warna/cetak hitam-putih, jumlah eksemplar, serta add-on seperti proofreading, promosi, dan distribusi.",
+    "open": false
+  },
+  {
+    "q": "Bagaimana alur menerbitkan buku di ACI?",
+    "a": "Kirim naskah (DOC/DOCX/PDF) ➝ asesmen & penawaran ➝ MoU & pembayaran DP ➝ editing/proofreading (sesuai paket) ➝ desain cover & layout ➝ pengajuan ISBN & Katalog Perpusnas ➝ proof/approval final ➝ cetak ➝ serah terima & (opsional) distribusi marketplace. Update progres dikirim rutin via WA/Email.",
+    "open": true
+  },
+  {
+    "q": "Berapa lama proses terbit hingga buku jadi?",
+    "a": "Estimasi mengikuti paket: cepat 11 hari (Raja), 20 hari (Menteri), atau 35 hari (Rakyat). Waktu dihitung sejak naskah final & approval desain. Proses cetak massal umumnya 3–7 hari kerja. Timeline detail dan target tertulis di MoU.",
+    "open": false
+  },
+  {
+    "q": "Apa saja yang penulis dapatkan?",
+    "a": "ISBN resmi, pendaftaran Katalog Perpusnas, file final (PDF siap cetak & e-book), desain cover & layout premium, sejumlah buku cetak sesuai paket, materi promosi (teaser) dan listing marketplace/ toko buku (bila termasuk paket), serta laporan progres.",
+    "open": false
+  },
+  {
+    "q": "Bagaimana hak cipta dan skema royalti?",
+    "a": "Hak cipta tetap milik penulis. Untuk penjualan melalui kanal ACI/marketplace, royalti dicatat transparan dan dibayarkan sesuai periode & ketentuan pada MoU. Besaran royalti mengikuti kanal penjualan (cetak/e-book) dan kebijakan platform.",
+    "open": false
+  },
+  {
+    "q": "Apakah ACI membantu desain cover, layout, dan editing?",
+    "a": "Ya. Desain cover, layout, templating, serta proofreading/quality check tersedia sesuai paket. Revisi: Paket Raja (unlimited), Menteri (3×), Rakyat (tanpa revisi). Revisi di luar lingkup/konsep baru dapat dikenakan biaya tambahan.",
+    "open": false
+  },
+  {
+    "q": "Bisakah hanya jasa cetak/print on demand?",
+    "a": "Bisa. Anda dapat kirim file siap-cetak, atau kami bantu layout dulu. Minimal cetak fleksibel, kualitas offset/digital disesuaikan kebutuhan. Ongkir dan pengemasan dicantumkan terpisah.",
+    "open": false
+  },
+  {
+    "q": "Format naskah & standar gambar yang disarankan?",
+    "a": "Kirim naskah .doc/.docx (lebih mudah diedit), gunakan gambar beresolusi ≥300 dpi dan pastikan hak pakai. Kami bantu penyesuaian ukuran (umum: A5/B5), margin/bleed, dan tata letak agar aman cetak dan nyaman dibaca.",
+    "open": false
+  }
+]
+  
