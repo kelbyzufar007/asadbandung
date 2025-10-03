@@ -56,6 +56,9 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
+
     <!-- Tailwind CDN (tetap pakai) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -222,14 +225,18 @@
 
             <!-- KANAN -->
             <div class="lg:col-span-5 flex justify-center lg:justify-start" data-aos="fade-left">
-                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759394566/Group_1876_sxuhoe.png"
+                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_768/v1759394566/Group_1876_sxuhoe.png"
                     srcset="
-    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_480/v1756699852/v1759394566/Group_1876_sxuhoe.png 480w,
-    https://res.cloudinary.com/dhjqjn2hn/image/upload/v1759394566/Group_1876_sxuhoe.png 768w,
-    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_1200/v1756699852/v1759394566/Group_1876_sxuhoe.png 1200w"
-                    sizes="(max-width:1024px) 90vw, 40vw" width="768" height="768" alt="Brand Ambassador"
-                    class="w-full max-w-[360px] sm:max-w-[340px] md:max-w-[420px] h-auto object-contain lg:-ml-6 xl:-ml-10"
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_360/v1759394566/Group_1876_sxuhoe.png 360w,
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_480/v1759394566/Group_1876_sxuhoe.png 480w,
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_640/v1759394566/Group_1876_sxuhoe.png 640w,
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_768/v1759394566/Group_1876_sxuhoe.png 768w,
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_960/v1759394566/Group_1876_sxuhoe.png 960w,
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_1200/v1759394566/Group_1876_sxuhoe.png 1200w
+  " sizes="(min-width:1024px) 40vw, 90vw" width="768" height="768" alt="Brand Ambassador"
+                    class="w-full h-auto object-contain max-w-[360px] sm:max-w-[340px] md:max-w-[420px] lg:-ml-6 xl:-ml-10"
                     fetchpriority="high" decoding="async" />
+
 
             </div>
 
@@ -563,11 +570,16 @@
                     </svg>
                 </button>
 
-                <!-- track -->
-                <div id="tst-track"
-                    class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth px-4 sm:px-1 pb-2 -mx-4 sm:-mx-1 scrollbar-none">
-                    <!-- slide akan di-inject JS -->
+                <!-- root splide -->
+                <div id="tst-splide" class="splide splide--hide-builtins relative" data-aos="fade-up"
+                    data-aos-delay="150" aria-label="Daftar testimoni">
+                    <div class="splide__track px-4 sm:px-1 -mx-4 sm:-mx-1 pb-2">
+                        <ul id="tst-track" class="splide__list">
+                            <!-- slides akan di-inject via JS -->
+                        </ul>
+                    </div>
                 </div>
+
 
                 <!-- tombol kanan -->
                 <button id="tst-next"
@@ -639,11 +651,14 @@
                     </svg>
                 </button>
 
-                <!-- TRACK -->
-                <div id="prod-track"
-                    class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 -mx-2 px-2 lg:px-0 scrollbar-none"
-                    aria-label="Daftar produk">
-                    <!-- slide akan di-inject via JS -->
+                <!-- ROOT SPLIDE -->
+                <div id="prod-splide" class="splide splide--hide-builtins relative" data-aos="fade-up"
+                    data-aos-delay="100" aria-label="Daftar produk">
+                    <div class="splide__track -mx-2 px-2 lg:px-0 pb-2">
+                        <ul id="prod-track" class="splide__list">
+                            <!-- slides di-inject via JS -->
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- tombol kanan -->
@@ -730,7 +745,7 @@
         });
     });
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
     <script src="assets/js/toogle.js" defer></script>
     <script src="assets/js/popup.js" defer></script>
     <script src="assets/js/clients-marquee.js" defer></script>

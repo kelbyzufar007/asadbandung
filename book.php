@@ -51,6 +51,9 @@
     <!-- Icondy via CDN -->
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
+
     <!-- AOS via CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
@@ -113,7 +116,7 @@
 
             <!-- Title -->
             <h3 class="text-lg sm:text-xl font-bold text-slate-900 text-center mb-3">
-                 Terbitkan Bukumu Sekarang!
+                Terbitkan Bukumu Sekarang!
             </h3>
 
             <!-- Button Konsultasi -->
@@ -264,8 +267,8 @@
         </symbol>
     </svg>
 
-    <section id="paket" class="py-16 bg-[#FCE9C9] ">
-        <div class="max-w-k7xl mx-auto px-6 lg:px-8">
+    <section id="paket" class="py-16 bg-[#FCE9C9]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <!-- Heading -->
             <header class="text-center mb-10">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-rose-900"
@@ -431,7 +434,8 @@
                         <h3 class="text-2xl font-extrabold">Paket Rakyat</h3>
                     </div>
                     <div class="p-6 md:p-7 flex flex-col grow">
-                        <h4 class="text-2xl font-extrabold text-center text-rose-900">Gratis 1x Revisi (Layout &amp; Cover)</h4>
+                        <h4 class="text-2xl font-extrabold text-center text-rose-900">Gratis 1x Revisi (Layout &amp;
+                            Cover)</h4>
                         <ul class="mt-5 space-y-3 text-slate-800">
                             <li class="li"><svg class="i i-check" aria-hidden="true">
                                     <use href="#icon-check" />
@@ -484,7 +488,7 @@
     </section>
 
     <!-- =============== LAYANAN KAMI =============== -->
-    <section id="produk" class="py-14 bg-white">
+    <section id="produk" class="py-14 bg-white d">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <!-- Heading -->
             <header class="text-center mb-8">
@@ -683,10 +687,14 @@
                     </svg>
                 </button>
 
-                <!-- track -->
-                <div id="tst-track"
-                    class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth px-4 pb-2 scrollbar-none">
-                    <!-- slide akan di-inject JS -->
+                <!-- root splide -->
+                <div id="tst-splide" class="splide splide--hide-builtins relative" data-aos="fade-up"
+                    data-aos-delay="150" aria-label="Daftar testimoni">
+                    <div class="splide__track px-4 sm:px-1 -mx-4 sm:-mx-1 pb-2">
+                        <ul id="tst-track" class="splide__list">
+                            <!-- slides akan di-inject via JS -->
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- tombol kanan -->
@@ -774,6 +782,7 @@ Halo admin ACI, saya ingin kirim naskah untuk *Paket ${paket}*.
         });
     })();
     </script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
 
     <script src="assets/js/toogle.js" defer></script>
     <script src="assets/js/popup.js" defer></script>

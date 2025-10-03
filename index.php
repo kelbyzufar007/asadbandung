@@ -37,11 +37,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link rel="preconnect" href="https://code.iconify.design" crossorigin>
-    
+
 
     <!-- Google Fonts: Inter (sekali saja, rapi) -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
 
     <!-- Tailwind CDN (tetap pakai). Konfigurasi opsional: batasi fitur agar ringan -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -61,6 +64,8 @@
     <!-- Iconify: non-blocking -->
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js" defer></script>
 
+
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11258390254">
     </script>
@@ -76,7 +81,8 @@
     </script>
 </head>
 
-<body class="antialiased bg-gray-50 text-gray-800 min-h-screen flex flex-col overflow-x-hidden " data-page="<?= basename($_SERVER['PHP_SELF']); ?>">
+<body class="antialiased bg-gray-50 text-gray-800 min-h-screen flex flex-col overflow-x-hidden "
+    data-page="<?= basename($_SERVER['PHP_SELF']); ?>">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSLV8NPD" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -485,7 +491,6 @@
                 </header>
 
                 <div class="relative isolate">
-                    <!-- tombol kiri -->
                     <button id="testi-prev"
                         class="absolute -left-5 md:-left-7 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full ring-2 ring-rose-900 text-rose-900 bg-white flex items-center justify-center hover:bg-rose-900/10 z-20"
                         aria-label="Sebelumnya" data-aos="fade-right" data-aos-delay="100">
@@ -495,12 +500,17 @@
                         </svg>
                     </button>
 
-                    <!-- TRACK -->
-                    <div id="testi-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth px-1 pb-2 scrollbar-none
-           pl-16 pr-16 md:pl-20 md:pr-20" aria-label="Daftar testimoni" data-aos="fade-up" data-aos-delay="150">
+                    <!-- SPLIDE ROOT -->
+                    <div id="testimonials" class="splide splide--hide-builtins relative isolate"
+                        aria-label="Daftar testimoni" data-aos="fade-up" data-aos-delay="150">
+                        <div class="splide__track">
+                            <ul id="testi-track" class="splide__list pl-16 pr-16 md:pl-20 md:pr-20">
+                                <!-- slides akan diinject lewat JS -->
+                            </ul>
+                        </div>
                     </div>
 
-                    <!-- tombol kanan -->
+                    <!-- tombol kanan (biarkan seperti semula) -->
                     <button id="testi-next"
                         class="absolute -right-5 md:-right-7 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full ring-2 ring-rose-900 text-rose-900 bg-white flex items-center justify-center hover:bg-rose-900/10 z-20"
                         aria-label="Berikutnya" data-aos="fade-left" data-aos-delay="100">
@@ -789,6 +799,7 @@
     </script>
 
     <!-- JS lokal kamu, pakai defer semua -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
     <script src="/assets/js/toogle.js" defer></script>
     <script src="/assets/js/services.js" defer></script>
     <script src="/assets/js/testimonials-t1.js" defer></script>
