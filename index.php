@@ -211,23 +211,6 @@
                         class="block px-4 py-3 rounded-lg bg-rose-900 text-white text-center hover:opacity-90">Hubungi
                         Kami</a></li>
             </ul>
-            <ul class="p-2 flex flex-col gap-2 text-base">
-                <li><a href="#tentang" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Tentang Kami</a></li>
-                <li><a href="/publikasi" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Publikasi Jurnal</a></li>
-                <li><a href="/penerbit" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Penerbitan Buku</a></li>
-                <li><a href="/ojs" class="block px-4 py-3 rounded-lg hover:bg-gray-50">OJS & Indexing</a></li>
-                <li><a href="/kursus" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Pelatihan & Sertifikasi</a>
-                <li><a href="/pelatihan" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Pelatihan Kerja Jepang</a>
-                <li><a href="/virtualoffice" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Virtual office</a>
-                <li><a href="/legalitas" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Legalitas</a>
-                </li>
-
-                <li><a href="#testimoni" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Testimoni</a></li>
-                <li><a href="#event" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Event</a></li>
-                <li><a href="#kontak"
-                        class="block px-4 py-3 rounded-lg bg-rose-900 text-white text-center hover:opacity-90">Hubungi
-                        Kami</a></li>
-            </ul>
         </div>
     </nav>
     <!-- ====== Section End Navbar ====== -->
@@ -445,11 +428,15 @@
                     </p>
                 </header>
 
-                <!-- TRACK: horizontal scroll + snap -->
-                <div id="services-track"
-                    class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 -mx-2 px-2 lg:px-0 scrollbar-none"
+                                <!-- TRACK: Splide slider -->
+                <div id="services-slider"
+                    class="splide pb-2 -mx-2 px-2 lg:px-0"
                     aria-label="Daftar layanan" data-aos="fade-up" data-aos-delay="150">
-                    <!-- slide akan diinject JS -->
+                    <div class="splide__track">
+                        <ul id="services-track" class="splide__list">
+                            <!-- slide akan diinject JS -->
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- NAV -->
@@ -727,8 +714,8 @@
         <div id="orders-notify" class="fixed bottom-6 right-6 z-40 pointer-events-none"></div>
 
 
-
-        <script>
+
+    <script>
         (function() {
             // ====== AUTOSLIDE: aman jika tombol ada ======
             const nextBtn =
@@ -786,20 +773,37 @@
 
 
     <!-- AOS JS (non-blocking) -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
     <script>
-    window.addEventListener('DOMContentLoaded', () => {
-        AOS.init({
-            duration: 700,
-            easing: 'ease-out-cubic',
-            offset: 80,
-            once: true
-        });
-    });
+    (function () {
+        function initAOS() {
+            if (!window.AOS) return;
+            window.AOS.init({
+                duration: 700,
+                easing: 'ease-out-cubic',
+                offset: 80,
+                once: true
+            });
+        }
+
+        function schedule() {
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(initAOS);
+            } else {
+                setTimeout(initAOS, 0);
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', schedule, { once: true });
+        } else {
+            schedule();
+        }
+    })();
     </script>
 
     <!-- JS lokal kamu, pakai defer semua -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="/assets/js/splide-loader.js" defer></script>
     <script src="/assets/js/toogle.js" defer></script>
     <script src="/assets/js/services.js" defer></script>
     <script src="/assets/js/testimonials-t1.js" defer></script>
@@ -809,3 +813,10 @@
     <script src="/assets/js/order-notify.js" defer></script>
 
 </body>
+
+
+
+
+
+
+
