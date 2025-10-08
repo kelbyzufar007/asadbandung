@@ -56,10 +56,13 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
 
     <!-- Tailwind CDN (tetap pakai) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 
     <!-- CSS kamu (jika ada) -->
     <link rel="preload" as="style" href="/assets/css/app.min.css">
@@ -543,8 +546,8 @@
     </section>
 
     <!-- BUKTI KEPUASAN CUSTOMER -->
-    <section id="testimoni" class=" bg-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="testimoni" class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-6 lg:px-8">
 
             <!-- Judul -->
             <header class="text-center mb-8">
@@ -569,16 +572,12 @@
                     </svg>
                 </button>
 
-                <!-- root splide -->
-                <div id="tst-splide" class="splide splide--hide-builtins relative" data-aos="fade-up"
-                    data-aos-delay="150" aria-label="Daftar testimoni">
-                    <div class="splide__track px-4 sm:px-1 -mx-4 sm:-mx-1 pb-2">
-                        <ul id="tst-track" class="splide__list">
-                            <!-- slides akan di-inject via JS -->
-                        </ul>
+                <!-- SWIPER ROOT -->
+                <div id="tst-swiper" class="swiper relative" aria-label="Daftar testimoni">
+                    <div class="swiper-wrapper px-4 sm:px-1 -mx-4 sm:-mx-1 pb-2" id="tst-track">
+                        <!-- slides akan di-inject via JS -->
                     </div>
                 </div>
-
 
                 <!-- tombol kanan -->
                 <button id="tst-next"
@@ -590,47 +589,13 @@
                     </svg>
                 </button>
             </div>
-
-            <!-- STAT -->
-            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                <!-- 1 -->
-                <div class="rounded-2xl bg-white border-[3px] border-amber-400 amber-glow px-8 py-6 text-center">
-                    <div class="text-3xl md:text-4xl font-extrabold text-rose-900">
-                        <span class="js-count" data-target="4760">0</span><span>+</span>
-                    </div>
-                    <p class="mt-1 text-slate-700">Author</p>
-                </div>
-
-                <!-- 2 -->
-                <div class="rounded-2xl bg-white border-[3px] border-amber-400 amber-glow px-8 py-6 text-center">
-                    <div class="text-3xl md:text-4xl font-extrabold text-rose-900">
-                        <span class="js-count" data-target="4800">0</span><span>+</span>
-                    </div>
-                    <p class="mt-1 text-slate-700">Artikel Terbit</p>
-                </div>
-
-                <!-- 3 -->
-                <div class="rounded-2xl bg-white border-[3px] border-amber-400 amber-glow px-8 py-6 text-center">
-                    <div class="text-3xl md:text-4xl font-extrabold text-rose-900">
-                        <span class="js-count" data-target="5">0</span><span>+ Tahun</span>
-                    </div>
-                    <p class="mt-1 text-slate-700">Dipercaya selama</p>
-                </div>
-
-                <!-- 4 -->
-                <div class="rounded-2xl bg-white border-[3px] border-amber-400 amber-glow px-8 py-6 text-center">
-                    <div class="text-3xl md:text-4xl font-extrabold text-rose-900">
-                        <span class="js-count" data-target="293">0</span><span>+</span>
-                    </div>
-                    <p class="mt-1 text-slate-700">Jurnal Ilmiah</p>
-                </div>
-            </div>
+            <div id="tst-dots" class="mt-5 flex justify-center gap-2"></div>
 
         </div>
     </section>
 
     <!-- PRODUK KAMI -->
-    <section id="produk" class="bg-white py-16">
+    <section id="produk" class="bg-white pt-6 pb-16">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <header class="text-center my-10">
                 <h2 class="text-3xl md:text-4xl font-extrabold"
@@ -650,13 +615,11 @@
                     </svg>
                 </button>
 
-                <!-- ROOT SPLIDE -->
-                <div id="prod-splide" class="splide splide--hide-builtins relative" data-aos="fade-up"
-                    data-aos-delay="100" aria-label="Daftar produk">
-                    <div class="splide__track -mx-2 px-2 lg:px-0 pb-2">
-                        <ul id="prod-track" class="splide__list">
-                            <!-- slides di-inject via JS -->
-                        </ul>
+                <!-- ROOT SWIPER -->
+                <div id="prod-swiper" class="swiper relative" aria-label="Daftar produk" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div id="prod-track" class="swiper-wrapper -mx-2 px-2 lg:px-0 pb-2">
+                        <!-- slides di-inject via JS -->
                     </div>
                 </div>
 
@@ -675,6 +638,10 @@
             <div id="prod-dots" class="mt-6 flex justify-center gap-2"></div>
         </div>
     </section>
+
+    <!-- Ganti file JS -->
+    <script src="assets/js/products-swiper.js" defer></script>
+
 
     <!-- (Opsional) sembunyikan scrollbar horizontal -->
     <style>
@@ -744,7 +711,7 @@
         });
     });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="assets/js/toogle.js" defer></script>
     <script src="assets/js/popup.js" defer></script>
     <script src="assets/js/clients-marquee.js" defer></script>

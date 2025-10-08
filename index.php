@@ -38,16 +38,15 @@
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link rel="preconnect" href="https://code.iconify.design" crossorigin>
 
-
     <!-- Google Fonts: Inter (sekali saja, rapi) -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-
-
     <!-- Tailwind CDN (tetap pakai). Konfigurasi opsional: batasi fitur agar ringan -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- CSS tambahanmu (kalau ada). Jika non-kritis, pakai trik non-blocking -->
     <link rel="preload" as="style" href="/assets/css/app.min.css">
@@ -407,11 +406,9 @@
         <section id="layanan" class="relative overflow-hidden bg-[#F4EAD6] py-14">
             <!-- dekor kiri/kanan -->
             <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094972/orn-right_ybuwe4.webp"
-                class="pointer-events-none absolute left-0 bottom-0 w-56 md:w-96 opacity-70" alt=""
-                data-aos="fade-right" data-aos-delay="0">
+                class="pointer-events-none absolute left-0 bottom-0 w-56 md:w-96 opacity-70" alt="">
             <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756094975/orn-left_ollpnl.webp"
-                class="pointer-events-none absolute right-0 top-0 w-56 md:w-96 rotate-180 opacity-70" alt=""
-                data-aos="fade-left" data-aos-delay="0">
+                class="pointer-events-none absolute right-0 top-0 w-56 md:w-96  opacity-70" alt="">
 
             <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
                 <header class="mb-6">
@@ -428,15 +425,11 @@
                     </p>
                 </header>
 
-                                <!-- TRACK: Splide slider -->
-                <div id="services-slider"
-                    class="splide pb-2 -mx-2 px-2 lg:px-0"
+                <!-- TRACK: horizontal scroll + snap -->
+                <div id="services-track"
+                    class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 -mx-2 px-2 lg:px-0 scrollbar-none"
                     aria-label="Daftar layanan" data-aos="fade-up" data-aos-delay="150">
-                    <div class="splide__track">
-                        <ul id="services-track" class="splide__list">
-                            <!-- slide akan diinject JS -->
-                        </ul>
-                    </div>
+                    <!-- slide akan diinject JS -->
                 </div>
 
                 <!-- NAV -->
@@ -466,8 +459,7 @@
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
                 <header class="text-center mb-8">
                     <h2 class="text-3xl md:text-4xl font-bold"
-                        style="font-family:'Madani', ui-sans-serif, system-ui; font-weight:700;" data-aos="fade-up"
-                        data-aos-delay="0">
+                        style="font-family:'Madani', ui-sans-serif, system-ui; font-weight:700;" data-aos="fade-up">
                         Bukti
                         <span class="relative text-rose-900">
                             Kepuasan Pelanggan
@@ -478,29 +470,28 @@
                 </header>
 
                 <div class="relative isolate">
+                    <!-- tombol kiri -->
                     <button id="testi-prev"
                         class="absolute -left-5 md:-left-7 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full ring-2 ring-rose-900 text-rose-900 bg-white flex items-center justify-center hover:bg-rose-900/10 z-20"
-                        aria-label="Sebelumnya" data-aos="fade-right" data-aos-delay="100">
+                        aria-label="Sebelumnya" data-aos="fade-right">
                         <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
                             <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
                     </button>
 
-                    <!-- SPLIDE ROOT -->
-                    <div id="testimonials" class="splide splide--hide-builtins relative isolate"
-                        aria-label="Daftar testimoni" data-aos="fade-up" data-aos-delay="150">
-                        <div class="splide__track">
-                            <ul id="testi-track" class="splide__list pl-16 pr-16 md:pl-20 md:pr-20">
-                                <!-- slides akan diinject lewat JS -->
-                            </ul>
-                        </div>
+                    <!-- SWIPER ROOT -->
+                    <div id="testimonials" class="swiper relative isolate" aria-label="Daftar testimoni"
+                        data-aos="fade-up">
+                        <ul id="testi-track" class="swiper-wrapper pl-16 pr-16 md:pl-20 md:pr-20">
+                            <!-- slides akan diinject JS, masing-masing <li class="swiper-slide ..."> -->
+                        </ul>
                     </div>
 
-                    <!-- tombol kanan (biarkan seperti semula) -->
+                    <!-- tombol kanan -->
                     <button id="testi-next"
                         class="absolute -right-5 md:-right-7 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full ring-2 ring-rose-900 text-rose-900 bg-white flex items-center justify-center hover:bg-rose-900/10 z-20"
-                        aria-label="Berikutnya" data-aos="fade-left" data-aos-delay="100">
+                        aria-label="Berikutnya" data-aos="fade-left">
                         <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
                             <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -508,10 +499,8 @@
                     </button>
                 </div>
 
-
-                <!-- DOTS -->
-                <div id="testi-dots" class="mt-5 flex justify-center gap-2" data-aos="fade-up" data-aos-delay="200">
-                </div>
+                <!-- DOTS (pagination) -->
+                <div id="testi-dots" class="mt-5 flex justify-center gap-2" data-aos="fade-up"></div>
             </div>
         </section>
 
@@ -714,8 +703,8 @@
         <div id="orders-notify" class="fixed bottom-6 right-6 z-40 pointer-events-none"></div>
 
 
-
-    <script>
+
+        <script>
         (function() {
             // ====== AUTOSLIDE: aman jika tombol ada ======
             const nextBtn =
@@ -773,37 +762,20 @@
 
 
     <!-- AOS JS (non-blocking) -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
     <script>
-    (function () {
-        function initAOS() {
-            if (!window.AOS) return;
-            window.AOS.init({
-                duration: 700,
-                easing: 'ease-out-cubic',
-                offset: 80,
-                once: true
-            });
-        }
-
-        function schedule() {
-            if ('requestIdleCallback' in window) {
-                requestIdleCallback(initAOS);
-            } else {
-                setTimeout(initAOS, 0);
-            }
-        }
-
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', schedule, { once: true });
-        } else {
-            schedule();
-        }
-    })();
+    window.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            offset: 80,
+            once: true
+        });
+    });
     </script>
 
     <!-- JS lokal kamu, pakai defer semua -->
-    <script src="/assets/js/splide-loader.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="/assets/js/toogle.js" defer></script>
     <script src="/assets/js/services.js" defer></script>
     <script src="/assets/js/testimonials-t1.js" defer></script>
@@ -813,10 +785,3 @@
     <script src="/assets/js/order-notify.js" defer></script>
 
 </body>
-
-
-
-
-
-
-

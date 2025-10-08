@@ -60,8 +60,9 @@
         scrollbar-width: none
     }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
 
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -125,12 +126,13 @@
                 </p>
 
                 <!-- Stat -->
-                <div class="flex items-center gap-4" data-aos="fade-right" data-aos-delay="180">
+                <div class="flex items-center gap-2" data-aos="fade-right" data-aos-delay="180">
                     <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="icon" class="w-12 h-12" />
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2">
                         <div class="flex items-baseline">
-                            <!-- angka animate -->
-                            <span class="text-4xl md:text-5xl font-extrabold leading-none tracking-tight text-[#6b0000]"
+                            <!-- w tetap + tabular numbers + sedikit margin-negatif agar ekstra rapat -->
+                            <span
+                                class="inline-block -ml-1 w-[6ch] text-right tabular-nums text-4xl md:text-5xl font-extrabold leading-none tracking-tight text-[#6b0000]"
                                 data-countup="2187" data-duration="1600">0</span>
                             <span
                                 class="ml-1 -translate-y-1 inline-block text-xl md:text-2xl font-extrabold leading-none text-[#6b0000]">+</span>
@@ -141,11 +143,7 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
+                
                 <!-- CTA -->
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-start" data-aos="fade-right"
                     data-aos-delay="260">
@@ -312,7 +310,7 @@
         </div>
     </section>
 
-     <!-- ========== PAKET PEMBUATAN OJS ========== -->
+    <!-- ========== PAKET PEMBUATAN OJS ========== -->
     <section id="paket" class="bg-white py-12 sm:py-16">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-6">
             <!-- Heading -->
@@ -342,7 +340,7 @@
                         <ul class="space-y-2 sm:space-y-2.5 text-slate-800 text-[15px] leading-6">
                             <!-- GROUP 1 -->
                             <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mb-2">
-                                INCLUDE (FASILITAS TEKNIK YANG DIDAPAT) :
+                                BONUS TAMBAHAN :
                             </p>
                             <ul class="space-y-2 text-sm leading-6">
                                 <li class="flex items-start gap-2">
@@ -356,7 +354,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Gratis Hosting & Domain 2 Tahun + SSL</span>
+                                    <span>Gratis Hosting & Domain (.com/.org/.ac.id/.id/.co.id) 2 TAHUN</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +367,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Unlimited Storage, Bandwidth, Database, & Email Domain</span>
+                                    <span>Storage Hosting Unlimited (Tanpa Batasan)</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -382,7 +380,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Instalasi OJS V3</span>
+                                    <span>Unlimited Bandwidth & Database (Tanpa Batasan)</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -395,11 +393,10 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Kustomisasi OJS (1 Jurnal, gratis theme, logo, desain cover & header)</span>
+                                    <span>Unlimited Akun Email Domain (Tanpa Batasan)</span>
                                 </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -407,12 +404,9 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Website Organisasi (Company Profile/Publisher)</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                    </svg><span>Jasa Backup Database setiap bulannya selama 2 TAHUN</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -420,12 +414,9 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Backup database bulanan 2 tahun</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                    </svg><span>Gratis Sertifikat SSL</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -433,12 +424,9 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Free maintenance 6 bulan (revisi tampilan max 4x)</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                    </svg><span>Instalasi OJS Versi 3 Terbaru</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -446,15 +434,113 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Akses lengkap (Web Jurnal, Website Organisasi, CPanel & Email Domain)</span>
-                                </li>
-                               
+                                    </svg><span>Kustomisasi Pembuatan 1 Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Gratis Theme Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Desain Header Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Desain Cover Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pengisian Navbar Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pengisian Informasi Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Gratis Logo Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Website Organisasi (company profile atau publisher)</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Free Maintenance 6 Bulan</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Batas Revisi Tampilan Web OJS 4X</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Akses Web Jurnal, Akses Website Organisasi, Akses Cpanel (Hosting),
+                                        dan Email Domain Tanpa Batas</span></li>
                             </ul>
 
                             <!-- GROUP 2 -->
                             <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mt-4 mb-2">
-                                INCLUDE (FASILITAS INDEXING) :
+                                BONUS TAMBAHAN :
                             </p>
                             <ul class="space-y-2 text-sm leading-6">
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
@@ -466,7 +552,7 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Bantuan pendaftaran E-ISSN, P-ISSN & DOI (termasuk biaya tahunan + deposit)</span></li>
+                                    </svg><span>Pendaftaran Bantuan E-ISSN</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -476,7 +562,7 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Indexing internasional DOAJ</span></li>
+                                    </svg><span>Pendaftaran Bantuan P-ISSN</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -486,7 +572,8 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Indexing nasional & internasional (Google Scholar, Dimensions, Garuda)</span></li>
+                                    </svg><span>Pendaftaran DOI + Aktivasi (Sudah Termasuk Annually 500rb + Deposito
+                                        500rb)</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -496,15 +583,7 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Template artikel & panduan OJS (video + modul)</span></li>
-                                
-                            </ul>
-
-                            <!-- GROUP 3 -->
-                            <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mt-4 mb-2">
-                                INCLUDE (SUPPORT & BONUS) :
-                            </p>
-                            <ul class="space-y-2 text-sm leading-6">
+                                    </svg><span>Indexing Internasional Google Scholar</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -514,7 +593,7 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Pelatihan & pendampingan pengelolaan jurnal (Zoom + tutorial)</span></li>
+                                    </svg><span>Indexing Internasional Dimensions</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -524,7 +603,7 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Pendampingan akreditasi SINTA</span></li>
+                                    </svg><span><b>INDEXING INTERNASIONAL DOAJ</b></span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -534,7 +613,7 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Free publikasi nasional (SINTA 4–5, Hukum, Ekonomi, Teknik)</span></li>
+                                    </svg><span>Indexing Nasional Garuda</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -544,7 +623,7 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Diskon 20% untuk publikasi jurnal/buku berikutnya</span></li>
+                                    </svg><span>Gratis Template Artikel</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -554,8 +633,75 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Kesempatan berafiliasi dengan web jurnal bereputasi</span></li>
-                                
+                                    </svg><span>Pelatihan Pengelolaan Jurnal (Zoom Meeting)
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Video Tutorial Pengelolaan web Jurnal
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Modul Panduan OJS
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Kesempatan BerAflllasl Dengan Web Jurnal Terkenal
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>Gratis Publikasi Nasional SINTA 4-5 (Hukum, Ekonomi, Teknik)</b>
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>PENDAMPINGAN AKREDITASI SINTA</b>
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>Diskon Voucher 20% Next Publikasi Jurnal +
+                                            Penerbitan buku</b>
+                                    </span></li>
                             </ul>
 
 
@@ -584,7 +730,7 @@
                         <ul class="space-y-2 sm:space-y-2.5 text-slate-800 text-[15px] leading-6">
                             <!-- GROUP 1 -->
                             <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mb-2">
-                                INCLUDE (FASILITAS TEKNIK YANG DIDAPAT) :
+                                BONUS TAMBAHAN :
                             </p>
                             <ul class="space-y-2 text-sm leading-6">
                                 <li class="flex items-start gap-2">
@@ -598,7 +744,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Gratis Hosting & Domain 2 Tahun + SSL</span>
+                                    <span>Gratis Hosting & Domain (.com/.org/.ac.id/.id/.co.id) 2 TAHUN</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -611,7 +757,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Unlimited Storage, Bandwidth, Database, & Email Domain</span>
+                                    <span>Storage Hosting Unlimited (Tanpa Batasan)</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -624,7 +770,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Instalasi OJS V3</span>
+                                    <span>Unlimited Bandwidth & Database (Tanpa Batasan)</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -637,11 +783,10 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Kustomisasi OJS (1 Jurnal, gratis theme, logo, desain cover & header)</span>
+                                    <span>Unlimited Akun Email Domain (Tanpa Batasan)</span>
                                 </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -649,12 +794,9 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Website Organisasi (Company Profile/Publisher)</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                    </svg><span>Jasa Backup Database setiap bulannya selama 2 TAHUN</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -662,21 +804,109 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Backup database bulanan 2 tahun</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    </svg><span>Gratis Sertifikat SSL</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Instalasi OJS Versi 3 Terbaru</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Kustomisasi Pembuatan 1 Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Gratis Theme Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Desain Header Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Desain Cover Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pengisian Navbar Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pengisian Informasi Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Gratis Logo Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Website Organisasi (company profile atau publisher)</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Free maintenance 6 bulan (revisi tampilan max 4x)</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                    </svg><span>Free Maintenance 6 Bulan</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -684,15 +914,23 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Akses lengkap (Web Jurnal, Website Organisasi, CPanel & Email Domain)</span>
-                                </li>
-                               
+                                    </svg><span>Batas Revisi Tampilan Web OJS 4X</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Akses Web Jurnal, Akses Website Organisasi, Akses Cpanel (Hosting),
+                                        dan Email Domain Tanpa Batas</span></li>
                             </ul>
 
                             <!-- GROUP 2 -->
                             <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mt-4 mb-2">
-                                INCLUDE (FASILITAS INDEXING) :
+                                BONUS TAMBAHAN :
                             </p>
                             <ul class="space-y-2 text-sm leading-6">
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
@@ -704,13 +942,58 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Bantuan pendaftaran E-ISSN, P-ISSN & DOI (termasuk biaya tahunan + deposit)</span></li>
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    </svg><span>Pendaftaran Bantuan E-ISSN</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pendaftaran Bantuan P-ISSN</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pendaftaran DOI + Aktivasi (Sudah Termasuk Annually 500rb + Deposito
+                                        500rb)</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Indexing Internasional Google Scholar</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Indexing Internasional Dimensions</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Indexing internasional DOAJ</span></li>
+                                    </svg><span><b>INDEXING INTERNASIONAL DOAJ</b></span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -720,41 +1003,17 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Indexing nasional & internasional (Google Scholar, Dimensions, Garuda)</span></li>
+                                    </svg><span>Indexing Nasional Garuda</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <g fill="#22c55e">
-                                            <path
-                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
-                                            <path fill-rule="evenodd"
-                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
-                                                clip-rule="evenodd" />
-                                        </g>
-                                    </svg><span>Template artikel & panduan OJS (video + modul)</span></li>
-                                
-                            </ul>
-
-                            <!-- GROUP 3 -->
-                            <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mt-4 mb-2">
-                                INCLUDE (SUPPORT & BONUS) :
-                            </p>
-                            <ul class="space-y-2 text-sm leading-6">
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <g fill="#22c55e">
-                                            <path
-                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
-                                            <path fill-rule="evenodd"
-                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
-                                                clip-rule="evenodd" />
-                                        </g>
-                                    </svg><span>Pelatihan & pendampingan pengelolaan jurnal (Zoom + tutorial)</span></li>
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Pendampingan akreditasi SINTA</span></li>
+                                    </svg><span>Gratis Template Artikel</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -764,7 +1023,8 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Free publikasi nasional (SINTA 4–5, Hukum, Ekonomi, Teknik)</span></li>
+                                    </svg><span>Pelatihan Pengelolaan Jurnal (Zoom Meeting)
+                                    </span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -774,7 +1034,8 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Diskon 20% untuk publikasi jurnal/buku berikutnya</span></li>
+                                    </svg><span>Video Tutorial Pengelolaan web Jurnal
+                                    </span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -784,8 +1045,53 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Kesempatan berafiliasi dengan web jurnal bereputasi</span></li>
-                                
+                                    </svg><span>Modul Panduan OJS
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Kesempatan BerAflllasl Dengan Web Jurnal Terkenal
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>Gratis Publikasi Nasional SINTA 4-5 (Hukum, Ekonomi, Teknik)</b>
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>PENDAMPINGAN AKREDITASI SINTA</b>
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>Diskon Voucher 20% Next Publikasi Jurnal +
+                                            Penerbitan buku</b>
+                                    </span></li>
                             </ul>
 
 
@@ -814,7 +1120,7 @@
                         <ul class="space-y-2 sm:space-y-2.5 text-slate-800 text-[15px] leading-6">
                             <!-- GROUP 1 -->
                             <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mb-2">
-                                INCLUDE (FASILITAS TEKNIK YANG DIDAPAT) :
+                                BONUS TAMBAHAN :
                             </p>
                             <ul class="space-y-2 text-sm leading-6">
                                 <li class="flex items-start gap-2">
@@ -828,7 +1134,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Gratis Hosting & Domain 2 Tahun + SSL</span>
+                                    <span>Gratis Hosting & Domain (.com/.org/.ac.id/.id/.co.id) 2 TAHUN</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -841,7 +1147,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Unlimited Storage, Bandwidth, Database, & Email Domain</span>
+                                    <span>Storage Hosting Unlimited (Tanpa Batasan)</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -854,7 +1160,7 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Instalasi OJS V3</span>
+                                    <span>Unlimited Bandwidth & Database (Tanpa Batasan)</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
@@ -867,42 +1173,120 @@
                                                 clip-rule="evenodd" />
                                         </g>
                                     </svg>
-                                    <span>Kustomisasi OJS (1 Jurnal, gratis theme, logo, desain cover & header)</span>
+                                    <span>Unlimited Akun Email Domain (Tanpa Batasan)</span>
                                 </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Jasa Backup Database setiap bulannya selama 2 TAHUN</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Gratis Sertifikat SSL</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Instalasi OJS Versi 3 Terbaru</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Kustomisasi Pembuatan 1 Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Gratis Theme Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Desain Header Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Desain Cover Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pengisian Navbar Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pengisian Informasi Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
-                                        </g>
-                                    </svg>
-                                    <span>Website Organisasi (Company Profile/Publisher)</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
-                                        <g fill="#22c55e">
                                             <path
-                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
                                             <path fill-rule="evenodd"
-                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Backup database bulanan 2 tahun</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    </svg><span>Gratis Logo Jurnal</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Free maintenance 6 bulan (revisi tampilan max 4x)</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24">
+                                    </svg><span>Website Organisasi (company profile atau publisher)</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -910,29 +1294,35 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg>
-                                    <span>Akses lengkap (Web Jurnal, Website Organisasi, CPanel & Email Domain)</span>
-                                </li>
-                               
+                                    </svg><span>Free Maintenance 6 Bulan</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Batas Revisi Tampilan Web OJS 4X</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g fill="#22c55e">
+                                            <path
+                                                d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Akses Web Jurnal, Akses Website Organisasi, Akses Cpanel (Hosting),
+                                        dan Email Domain Tanpa Batas</span></li>
                             </ul>
 
                             <!-- GROUP 2 -->
                             <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mt-4 mb-2">
-                                INCLUDE (FASILITAS INDEXING) :
+                                BONUS TAMBAHAN :
                             </p>
                             <ul class="space-y-2 text-sm leading-6">
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
-                                        </g>
-                                    </svg><span>Bantuan pendaftaran E-ISSN, P-ISSN & DOI (termasuk biaya tahunan + deposit)</span></li>
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
-                                        </g>
-                                    </svg><span>Indexing internasional DOAJ</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -942,39 +1332,7 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Indexing nasional & internasional (Google Scholar, Dimensions, Garuda)</span></li>
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
-                                        </g>
-                                    </svg><span>Template artikel & panduan OJS (video + modul)</span></li>
-                                
-                            </ul>
-
-                            <!-- GROUP 3 -->
-                            <p class="font-bold text-[12px] tracking-wide text-slate-800 uppercase mt-4 mb-2">
-                                INCLUDE (SUPPORT & BONUS) :
-                            </p>
-                            <ul class="space-y-2 text-sm leading-6">
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
-                                        </g>
-                                    </svg><span>Pelatihan & pendampingan pengelolaan jurnal (Zoom + tutorial)</span></li>
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
-                                        </g>
-                                    </svg><span>Pendampingan akreditasi SINTA</span></li>
-                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="#D40000">
-                                            <path d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0"></path>
-                                            <path fill-rule="evenodd" d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1" clip-rule="evenodd"></path>
-                                        </g>
-                                    </svg><span>Free publikasi nasional (SINTA 4–5, Hukum, Ekonomi, Teknik)</span></li>
+                                    </svg><span>Pendaftaran Bantuan E-ISSN</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                         <g fill="#22c55e">
@@ -984,9 +1342,82 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Diskon 20% untuk publikasi jurnal/buku berikutnya</span></li>
+                                    </svg><span>Pendaftaran Bantuan P-ISSN</span></li>
                                 <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pendaftaran DOI + Aktivasi (Sudah Termasuk Annually 500rb + Deposito
+                                        500rb)</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Indexing Internasional Google Scholar</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Indexing Internasional Dimensions</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>INDEXING INTERNASIONAL DOAJ</b></span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Indexing Nasional Garuda</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Gratis Template Artikel</span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Pelatihan Pengelolaan Jurnal (Zoom Meeting)
+                                    </span></li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="mt-[3px] w-4 h-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
                                         <g fill="#22c55e">
                                             <path
                                                 d="M10.243 16.314L6 12.07l1.414-1.414l2.829 2.828l5.656-5.657l1.415 1.415z" />
@@ -994,8 +1425,65 @@
                                                 d="M1 5a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H5a4 4 0 0 1-4-4zm4-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2"
                                                 clip-rule="evenodd" />
                                         </g>
-                                    </svg><span>Kesempatan berafiliasi dengan web jurnal bereputasi</span></li>
-                                
+                                    </svg><span>Video Tutorial Pengelolaan web Jurnal
+                                    </span>
+                                </li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Modul Panduan OJS
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span>Kesempatan BerAflllasl Dengan Web Jurnal Terkenal
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>Gratis Publikasi Nasional SINTA 4-5 (Hukum, Ekonomi, Teknik)</b>
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>PENDAMPINGAN AKREDITASI SINTA</b>
+                                    </span></li>
+                                <li class="flex items-start gap-2"><svg class="mt-[3px] w-4 h-4 flex-shrink-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="#D40000">
+                                            <path
+                                                d="M16.396 7.757a1 1 0 0 1 0 1.415l-2.982 2.981l2.676 2.675a1 1 0 1 1-1.415 1.415L12 13.567l-2.675 2.676a1 1 0 0 1-1.415-1.415l2.676-2.675l-2.982-2.981A1 1 0 1 1 9.02 7.757L12 10.74l2.981-2.982a1 1 0 0 1 1.415 0" />
+                                            <path fill-rule="evenodd"
+                                                d="M4 1a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm16 2H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                    </svg><span><b>Diskon Voucher 20% Next Publikasi Jurnal +
+                                            Penerbitan buku</b>
+                                    </span></li>
                             </ul>
 
 
@@ -1115,8 +1603,7 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <header class="text-center mb-8">
                 <h2 class="text-3xl md:text-4xl font-bold"
-                    style="font-family:'Madani', ui-sans-serif, system-ui; font-weight:700;" data-aos="fade-up"
-                    data-aos-delay="0">
+                    style="font-family:'Madani', ui-sans-serif, system-ui; font-weight:700;" data-aos="fade-up">
                     Bukti
                     <span class="relative text-rose-900">
                         Kepuasan Pelanggan
@@ -1127,29 +1614,27 @@
             </header>
 
             <div class="relative isolate">
+                <!-- tombol kiri -->
                 <button id="testi-prev"
                     class="absolute -left-5 md:-left-7 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full ring-2 ring-rose-900 text-rose-900 bg-white flex items-center justify-center hover:bg-rose-900/10 z-20"
-                    aria-label="Sebelumnya" data-aos="fade-right" data-aos-delay="100">
+                    aria-label="Sebelumnya" data-aos="fade-right">
                     <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
                         <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
                 </button>
 
-                <!-- SPLIDE ROOT -->
-                <div id="testimonials" class="splide splide--hide-builtins relative isolate"
-                    aria-label="Daftar testimoni" data-aos="fade-up" data-aos-delay="150">
-                    <div class="splide__track">
-                        <ul id="testi-track" class="splide__list pl-16 pr-16 md:pl-20 md:pr-20">
-                            <!-- slides akan diinject lewat JS -->
-                        </ul>
-                    </div>
+                <!-- SWIPER ROOT -->
+                <div id="testimonials" class="swiper relative isolate" aria-label="Daftar testimoni" data-aos="fade-up">
+                    <ul id="testi-track" class="swiper-wrapper pl-16 pr-16 md:pl-20 md:pr-20">
+                        <!-- slides akan diinject JS, masing-masing <li class="swiper-slide ..."> -->
+                    </ul>
                 </div>
 
-                <!-- tombol kanan (biarkan seperti semula) -->
+                <!-- tombol kanan -->
                 <button id="testi-next"
                     class="absolute -right-5 md:-right-7 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full ring-2 ring-rose-900 text-rose-900 bg-white flex items-center justify-center hover:bg-rose-900/10 z-20"
-                    aria-label="Berikutnya" data-aos="fade-left" data-aos-delay="100">
+                    aria-label="Berikutnya" data-aos="fade-left">
                     <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
                         <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -1157,10 +1642,8 @@
                 </button>
             </div>
 
-
-            <!-- DOTS -->
-            <div id="testi-dots" class="mt-5 flex justify-center gap-2" data-aos="fade-up" data-aos-delay="200">
-            </div>
+            <!-- DOTS (pagination) -->
+            <div id="testi-dots" class="mt-5 flex justify-center gap-2" data-aos="fade-up"></div>
         </div>
     </section>
 
@@ -1323,7 +1806,9 @@
         });
     });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+
+    <!-- JS lokal kamu, pakai defer semua -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="assets/js/toogle.js" defer></script>
     <script src="assets/js/clients-marquee-lkp.js" defer></script>
     <script src="assets/js/testimonials-t1.js" defer></script>

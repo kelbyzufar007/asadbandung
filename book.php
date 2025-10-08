@@ -48,11 +48,11 @@
     <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Swiper via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <!-- Icondy via CDN -->
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-
 
     <!-- AOS via CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
@@ -108,15 +108,21 @@
 
             <!-- Image with link to WhatsApp -->
             <a href="https://wa.me/6282297881480?text=Halo%20Admin%20ACI%2C%20mau%20tau%20info%20promo%20penerbitan%20dengan%20cashback%2010%25."
-                class="conversion" target="_blank" rel="noopener">
-                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756805763/Dapatkan_Cashback_10_ywql0g.webp"
-                    alt="Popup Image"
-                    class="w-full max-w-xs sm:max-w-sm aspect-[4/5] object-cover rounded-xl mb-5 shadow-md">
+                target="_blank" rel="noopener" class="conversion">
+                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_600/v1756805763/Dapatkan_Cashback_10_ywql0g.webp"
+                    srcset="
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_400/v1756805763/Dapatkan_Cashback_10_ywql0g.webp 400w,
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_600/v1756805763/Dapatkan_Cashback_10_ywql0g.webp 600w,
+    https://res.cloudinary.com/dhjqjn2hn/image/upload/f_auto,q_auto,w_800/v1756805763/Dapatkan_Cashback_10_ywql0g.webp 800w"
+                    sizes="(max-width:640px) 90vw, 400px" width="600" height="750" alt="Promo Publikasi"
+                    class="conversion w-full max-w-xs sm:max-w-sm aspect-[4/5] object-cover rounded-xl mb-5 shadow-md"
+                    loading="lazy" decoding="async" />
+
             </a>
 
             <!-- Title -->
             <h3 class="text-lg sm:text-xl font-bold text-slate-900 text-center mb-3">
-                Terbitkan Bukumu Sekarang!
+                Publikasi Jurnalmu Sekarang!
             </h3>
 
             <!-- Button Konsultasi -->
@@ -127,7 +133,6 @@
             </a>
         </div>
     </div>
-
 
     <!-- HERO -->
     <section id="hero" class="relative py-8 sm:py-12 md:py-16">
@@ -612,57 +617,8 @@
     </section>
 
     <!-- ================== TESTIMONI – SINGLE ================== -->
-    <section id="testimoni" class="py-14 bg-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-
-            <!-- KIRI: Teks -->
-            <div class="space-y-4" data-aos="fade-right">
-                <h2 class="text-3xl md:text-4xl font-extrabold ">
-                    Bukti <span class="text-rose-900">Kepuasan</span> Customer
-                </h2>
-
-                <!-- quote marks -->
-                <div class="flex gap-1 text-amber-500">
-                    <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756103302/tiptip_fxhqkf.webp" alt="">
-                </div>
-
-                <p class="text-slate-700 text-justify leading-relaxed">
-                    Proses penerbitan buku saya berjalan dengan sangat lancar dan ini yang kesekian kalinya.
-                    Tim Asad Corpn sangat profesional, responsif, dan penuh perhatian terhadap setiap detail.
-                    Hasil akhirnya luar biasa, dengan kualitas cetakan yang tajam dan desain yang menarik.
-                    Asad Corporation bukan hanya sekadar penerbit, mereka benar-benar membantu mewujudkan karya saya
-                    dengan sempurna. Terima kasih, Asad Corporation, untuk pengalaman luar biasa ini.
-                </p>
-
-                <div class="pt-1 flex flex-wrap gap-3">
-                    <a href="https://wa.me/6282297881480?text=Halo%20admin%20ACI%2C%20saya%20ingin%20kirim%20naskah%20untuk%20penerbitan%20buku."
-                        target="_blank" rel="noopener"
-                        class="conversion inline-flex items-center px-5 py-2.5 rounded-lg bg-amber-500 text-rose-900 font-semibold hover:bg-amber-400">
-                        Kirim Naskah Sekarang
-                    </a>
-
-                    <a href="#testimoni"
-                        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-amber-400 text-slate-900 hover:bg-amber-50">
-                        Lebih Banyak
-                        <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 15.5 6 9.5h12z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- KANAN: Poster Testimoni -->
-            <div class="flex justify-center lg:justify-end" data-aos="fade-left">
-                <img src="https://res.cloudinary.com/dhjqjn2hn/image/upload/v1756102870/testiasadbuku00_q3ixm2.webp"
-                    alt="Testimoni buku"
-                    class="w-full max-w-[420px] rounded-xl shadow-lg ring-1 ring-slate-200 object-cover" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- BUKTI KEPUASAN CUSTOMER -->
-    <section id="kepuasan" class=" bg-white">
-        <div class="max-w-7xl mx-auto px-6 py-16 lg:px-8">
+    <section id="kepuasaan" class="bg-white">
+        <div class="max-w-7xl mx-auto px-6 py-6 lg:px-8">
 
             <!-- Judul -->
             <header class="text-center mb-8">
@@ -687,13 +643,10 @@
                     </svg>
                 </button>
 
-                <!-- root splide -->
-                <div id="tst-splide" class="splide splide--hide-builtins relative" data-aos="fade-up"
-                    data-aos-delay="150" aria-label="Daftar testimoni">
-                    <div class="splide__track px-4 sm:px-1 -mx-4 sm:-mx-1 pb-2">
-                        <ul id="tst-track" class="splide__list">
-                            <!-- slides akan di-inject via JS -->
-                        </ul>
+                <!-- SWIPER ROOT -->
+                <div id="tst-swiper" class="swiper relative" aria-label="Daftar testimoni">
+                    <div class="swiper-wrapper px-4 sm:px-1 -mx-4 sm:-mx-1 pb-2" id="tst-track">
+                        <!-- slides akan di-inject via JS -->
                     </div>
                 </div>
 
@@ -707,6 +660,7 @@
                     </svg>
                 </button>
             </div>
+            <div id="tst-dots" class="mt-5 flex justify-center gap-2"></div>
 
         </div>
     </section>
@@ -782,8 +736,7 @@ Halo admin ACI, saya ingin kirim naskah untuk *Paket ${paket}*.
         });
     })();
     </script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="assets/js/toogle.js" defer></script>
     <script src="assets/js/popup.js" defer></script>
     <script src="assets/js/clients-marquee.js" defer></script>

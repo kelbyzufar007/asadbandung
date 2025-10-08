@@ -54,6 +54,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
 
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Tailwind via CDN (tetap pakai) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -637,7 +639,7 @@
         </section>
 
         <!-- Script -->
-        <script src="/assets/js/testimonials-lpk.js" defer></script>
+        <script src="/assets/js/testimonials-t3.js" defer></script>
 
 
         <!-- ========== CTA: TUNGGU APA LAGI? ========== -->
@@ -725,7 +727,7 @@
         });
     });
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="assets/js/toogle.js" defer></script>
     <script src="assets/js/clients-marquee-lkp.js" defer></script>
     <script src="assets/js/testimonials-t2.js" defer></script>

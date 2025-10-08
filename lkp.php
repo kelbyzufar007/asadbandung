@@ -52,6 +52,9 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
 
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Tailwind via CDN (tetap pakai) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -889,12 +892,11 @@
         </section>
 
         <!-- ================= TESTIMONI ================= -->
-        <section id="testimoni" class="bg-neutral-100 py-14 relative overflow-hidde">
+        <section id="testimoni" class="bg-neutral-100 py-14 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
                 <header class="text-center mb-8">
                     <h2 class="text-3xl md:text-4xl font-bold"
-                        style="font-family:'Madani', ui-sans-serif, system-ui; font-weight:700;" data-aos="fade-up"
-                        data-aos-delay="0">
+                        style="font-family:'Madani', ui-sans-serif, system-ui; font-weight:700;" data-aos="fade-up">
                         Bukti
                         <span class="relative text-rose-900">
                             Kepuasan Pelanggan
@@ -908,22 +910,25 @@
                     <!-- tombol kiri -->
                     <button id="testi-prev"
                         class="absolute -left-5 md:-left-7 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full ring-2 ring-rose-900 text-rose-900 bg-white flex items-center justify-center hover:bg-rose-900/10 z-20"
-                        aria-label="Sebelumnya" data-aos="fade-right" data-aos-delay="100">
+                        aria-label="Sebelumnya" data-aos="fade-right">
                         <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
                             <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
                     </button>
 
-                    <!-- TRACK -->
-                    <div id="testi-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth px-1 pb-2 scrollbar-none
-           pl-16 pr-16 md:pl-20 md:pr-20" aria-label="Daftar testimoni" data-aos="fade-up" data-aos-delay="150">
+                    <!-- SWIPER ROOT -->
+                    <div id="testimonials" class="swiper relative isolate" aria-label="Daftar testimoni"
+                        data-aos="fade-up">
+                        <ul id="testi-track" class="swiper-wrapper pl-16 pr-16 md:pl-20 md:pr-20">
+                            <!-- slides akan diinject JS, masing-masing <li class="swiper-slide ..."> -->
+                        </ul>
                     </div>
 
                     <!-- tombol kanan -->
                     <button id="testi-next"
                         class="absolute -right-5 md:-right-7 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full ring-2 ring-rose-900 text-rose-900 bg-white flex items-center justify-center hover:bg-rose-900/10 z-20"
-                        aria-label="Berikutnya" data-aos="fade-left" data-aos-delay="100">
+                        aria-label="Berikutnya" data-aos="fade-left">
                         <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
                             <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -931,10 +936,8 @@
                     </button>
                 </div>
 
-
-                <!-- DOTS -->
-                <div id="testi-dots" class="mt-5 flex justify-center gap-2" data-aos="fade-up" data-aos-delay="200">
-                </div>
+                <!-- DOTS (pagination) -->
+                <div id="testi-dots" class="mt-5 flex justify-center gap-2" data-aos="fade-up"></div>
             </div>
         </section>
 
@@ -994,7 +997,7 @@
         });
     });
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="assets/js/toogle.js" defer></script>
     <script src="assets/js/clients-marquee-lkp.js" defer></script>
     <script src="assets/js/testimonials-t1.js" defer></script>
